@@ -1,0 +1,12 @@
+.done {
+    text-decoration: line-through;
+}
+
+.span-size {
+    padding: 3em;
+} 
+
+.icon-display {
+    transform: scale(1.2);
+}
+

@@ -1,3 +1,32 @@
-.done {
-    text-decoration: line-through;
+.first-title {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+.sec-title {
+    margin-left: 2.5em;
+}
+
+.cst-p {
+    margin-left: 2.5em;
+    font-size: 2em;
+}
+
+.cst-ul {
+    margin-left: 5em;
+    margin-right: 50em;
+    
+
+}
+
+.cst-li {
+    font-size:1.5em;
+    text-align: center;
+    
+
+}
+
+:hover .cst-li  {
+    transform: translate(0,0);
+    transition: 1ms;
+    opacity: 0.7;
 }

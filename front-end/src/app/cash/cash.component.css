@@ -1,0 +1,40 @@
+.paid {
+    text-decoration: line-through;
+}
+
+.cstm-ul li {
+    padding: 15px;
+} 
+
+ .table-cst  {
+color: white ;
+background-color: black;
+opacity: 0.8;
+border-radius: 1em;
+}
+
+form input{
+    padding-bottom: 5px;
+}
+
+.action-th {
+    padding-left: 5%;
+}
+
+.icon-display  {
+    transform: scale(0.7);
+    transition: 2ms;
+
+}
+
+
+.closed-status {
+    text-decoration: line-through;
+    background-color: rgb(31, 99, 99);
+
+}
+
+
+
+
+

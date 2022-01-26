@@ -1,0 +1,87 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-4">
+  <h3>Controle financeiro <mat-icon class="icon-display">attach_money</mat-icon></h3>
+  <hr/>
+
+  
+ 
+<div class="row">
+<div class="col-md-12">
+
+  
+  
+  <div>
+  <table class="table table-cst">
+    <thead>
+        <tr>
+          <th scope="col"><mat-icon>numbers</mat-icon></th>  
+          <th scope="col">Pagamento</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Valor</th>
+          <th scope="col">Data de Vencimento</th>
+          <th class="action-th" scope="col"><mat-icon>done</mat-icon></th>
+          <th scope="col">Data de Registro</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let cashh of cash" >
+        <tr class="{{ cashh.status ? 'closed-status' : '' }}">
+          <th scope="row">{{cashh.id}}</th>
+          <td>  <mat-icon class="icon-display">currency_exchange</mat-icon>
+            {{cashh.paym_name}}</td>
+          <td>{{cashh.description}}</td>
+          <td>R${{cashh.value}}</td>
+          <td>{{cashh.dueDate}}</td>
+          
+          
+          <span class="{{ cashh.status ? 'true' : '' }}">
+            
+          </span>
+          <div class="btn-group">
+            <button class="btn btn-success"
+            [disabled]="cashh.paidDate" 
+            (click)="done(cashh)">Paid</button>
+            <button class="btn btn-danger" (click)="delete(cashh)">Delete</button>
+          </div>    
+          
+          <td>{{cashh.recordDate}}</td>
+        </tr>
+      </tbody>
+    </table>
+      
+  </div>
+
+</div>
+
+
+</div>
+<hr/>
+
+
+<form [formGroup]="form"  (ngSubmit)="submitForm()">
+  <div class="row">
+   <div class="col-md-6">
+     <input type="text" class="form-control" placeholder="Nome"  formControlName="paym_name" />
+     <hr/>
+     <input type="text" class="form-control" placeholder="Descrição"  formControlName="description" />
+     
+     <hr/>
+     <input type="number" class="form-control" placeholder="Valor"  formControlName="value" />
+     
+ 
+     <hr/>
+     <input type="text" class="form-control" placeholder="Data de Vencimento"  formControlName="dueDate"  />
+     
+     
+ 
+    </div>
+
+   
+    <div class="col-md-1">
+     <button type="submit"  class="btn btn-primary">Add</button> 
+    </div>
+   </div>
+ </form>
+ 
+</div>
+

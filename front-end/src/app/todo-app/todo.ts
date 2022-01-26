@@ -5,6 +5,4 @@ export class Todo {
     createdDate?: string;
     doneDate?: string;
     type?: string;
-
-     
 }
