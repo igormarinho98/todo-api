@@ -10,10 +10,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CashComponent } from './cash/cash.component';
 import { HomeComponent } from './home/home.component';
 import { TodoAppComponent } from './todo-app/todo-app.component';
-import { AuthComponent } from './auth/auth.component';
 
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GoalComponent } from './goal/goal.component';
 
 const materialModules = [
   MatIconModule
@@ -26,7 +26,7 @@ const materialModules = [
     CashComponent,
     HomeComponent,
     TodoAppComponent,
-    AuthComponent,
+    GoalComponent,
 
   ],
   imports: [

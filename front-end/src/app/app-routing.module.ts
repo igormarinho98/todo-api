@@ -4,14 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { CashComponent } from './cash/cash.component';
 import { HomeComponent } from './home/home.component';
 import { TodoAppComponent } from './todo-app/todo-app.component';
-import { AuthComponent } from './auth/auth.component';
+import { GoalComponent } from './goal/goal.component';
 
 const routes : Routes = [
   {path: 'cash', component: CashComponent },
   {path: 'cash:id', component: CashComponent },
   {path: 'home', component: HomeComponent},
   {path:'todo', component: TodoAppComponent},
-  {path: 'login', component: AuthComponent},
+  {path: 'goal', component: GoalComponent},
   {path: '', redirectTo:'/home', pathMatch: 'full'},
   {path: '**', redirectTo:'/home', pathMatch: 'full'},
 

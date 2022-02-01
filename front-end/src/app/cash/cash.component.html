@@ -5,9 +5,34 @@
   <hr/>
 
   
+<form [formGroup]="form"  (ngSubmit)="submitForm()">
+  <div class="row">
+   <div class="col-md-6 mb-5">
+     <input type="text" class="form-control" placeholder="Nome"  formControlName="paym_name" />
+     <hr/>
+     <input type="text" class="form-control" placeholder="Descrição"  formControlName="description" />
+     
+     <hr/>
+     <input type="number" class="form-control" placeholder="Valor"  formControlName="value" />
+     
+ 
+     <hr/>
+     <input type="text" class="form-control" placeholder="Data de Vencimento"  formControlName="dueDate"  />
+     
+     
+ 
+    </div>
+
+   
+    <div class="col-md-1">
+     <button type="submit"  class="btn btn-primary">Add</button> 
+    </div>
+   </div>
+ </form>
+  
  
 <div class="row">
-<div class="col-md-12">
+<div class="col-md-12 mb-5">
 
   
   
@@ -58,30 +83,6 @@
 <hr/>
 
 
-<form [formGroup]="form"  (ngSubmit)="submitForm()">
-  <div class="row">
-   <div class="col-md-6">
-     <input type="text" class="form-control" placeholder="Nome"  formControlName="paym_name" />
-     <hr/>
-     <input type="text" class="form-control" placeholder="Descrição"  formControlName="description" />
-     
-     <hr/>
-     <input type="number" class="form-control" placeholder="Valor"  formControlName="value" />
-     
- 
-     <hr/>
-     <input type="text" class="form-control" placeholder="Data de Vencimento"  formControlName="dueDate"  />
-     
-     
- 
-    </div>
-
-   
-    <div class="col-md-1">
-     <button type="submit"  class="btn btn-primary">Add</button> 
-    </div>
-   </div>
- </form>
  
 </div>
 
